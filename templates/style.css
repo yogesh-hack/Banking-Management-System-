@@ -1,0 +1,366 @@
+*{
+  margin:0;
+  padding:0;
+/*   font-family: 'Dosis', sans-serif; */
+/*   font-family: 'Poiret One', sans-serif; */
+/*   font-family: 'Barlow Semi Condensed', sans-serif; */
+  font-family:'Abel';
+  box-sizing:border-box;
+}
+body{
+    background:#232323;
+}
+.dashboardContainer{
+  height: 100%;
+  margin: 0 auto;
+  background:#232323;
+  color:white;
+  display:flex;
+}
+.menu{
+  width:auto;
+  height:inherit;
+}
+.title{
+  width:inherit;
+  height:100px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.imgHolder{
+  height:75px;
+  width:75px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.imgHolder > img{
+  height:40px;
+}
+h3{
+  letter-spacing:3px;
+  font-size:24px;
+   background:linear-gradient(to left, #89c7f8, #b8a5fa, #db89fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.profile{
+  height:200px;
+  width:inherit;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-around;
+}
+.profileImg{
+  width:inherit;
+  height:100px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.profileImg>img{
+  height:95px;
+}
+.details{
+  height:50px;
+  letter-spacing:2px;
+  font-weight:bolder;
+  font-size:18px;
+  text-align:center;
+}
+.details > span{
+  color:#cdcdcd;
+  font-size:12px;
+}
+.menuItems{
+  width:inherit;
+  height:330px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  align-items:center;
+}
+.options{
+  width:inherit;
+}
+.items{
+  height:50px;
+  width:inherit;
+  display:flex;
+  align-items:center;
+  cursor:pointer;
+}
+.items>i{
+  margin:0 20px;
+}
+.items>h5{
+  letter-spacing:2px;
+}
+.selected{
+  color: #232323;
+    background: linear-gradient(to left, #89c7f8, #b8a5fa, #db89fb);
+}
+.info{
+  width:730px;
+  padding:20px;
+  color:white;
+}
+.header{
+  height:60px;
+  width:710px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;  
+  margin-bottom:12px;
+}
+.extras{
+  width:350px;
+  height:45px;
+  background:white;
+  border-top-left-radius:1.5em;
+  border-bottom-left-radius:1.5em;
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  color:#232323;
+}
+.header > h4{
+  letter-spacing:3px;
+}
+.support{
+  width:120px;
+  height:30px;
+  margin-left:50px;
+  margin-right:30px;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  border-radius:1.2em;
+  padding:4px 10px;
+  border:2px solid;
+  letter-spacing:2px;
+}
+.dateInfo{
+  letter-spacing:2px;
+  padding:4px 8px;
+  border-radius:1.2em;
+  color:#232323;
+  background:#fff;
+  border:2px solid #fff;
+  width:50%;
+  text-align:center;
+  font-weight:bolder;
+  
+}
+.firstRow{
+  width:690px;
+  height:200px;
+  padding:8px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:6px;
+}
+.elemfirst{
+  width:332px;
+  height:180px;
+  border:1px solid;
+}
+.elemfirst > h5{
+  height:30px;
+  display:flex;
+  align-items:center;
+  letter-spacing:2px;
+  padding-left:20px;
+  border-bottom:1px solid;
+  margin-bottom:6px;
+}
+#first > p{
+  text-align:left;
+  padding-left:20px;
+  letter-spacing:2px;
+  margin-bottom:4px;
+}
+#first > p >strong{
+  font-size:12px;
+  letter-spacing:2px;
+  color:#3498db;
+}
+#balance{
+  width:inherit;
+  text-align:center;
+  font-size:28px;
+  margin-top:48px;
+  letter-spacing:2px;
+  color:#3498db;
+}
+.secondRow{
+  width:690px;
+  height:310px;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+}
+.elemSecond{
+  height:290px;
+  width:220px;
+  border:1px solid;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+.elemSecond > h5{
+  height:30px;
+  width:inherit;
+  display:flex;
+  align-items:center;
+  letter-spacing:2px;
+  padding-left:20px;
+  border-bottom:1px solid;
+  margin-bottom:12px;
+}
+.cardImg{
+  width:80px;
+  height:80px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#7f8c8d;
+  border-radius:50%;
+  margin-bottom:4px;
+}
+.cardImg > img{
+  height:45px;
+}
+.cards{
+  width:90%;
+  height:30px;
+  margin:0 auto;
+  margin-top:4px;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+}
+.cards > i {
+  font-size:18px;
+}
+.cards > h5{
+  letter-spacing:1px;
+}
+.cardLabels{
+  width:inherit;
+  text-align:left;
+  padding-left:20px;
+  color:#3498db;
+}
+.statement{
+  margin-top:4px;
+  padding:6px 10px;
+  border:2px solid;
+  border-radius:1.2em;
+  cursor:pointer;
+  font-weight:bolder;
+  font-size:14px;
+  letter-spacing:2px;
+}
+.statement:hover{
+  color:#232323;
+  background:#fff;
+  border:2px solid;
+}
+.transaction{
+  width:95%;
+  height:45px;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  margin-bottom:6px;
+}
+.transaction > div{
+  height:40px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-weight:bold;
+}
+.date{
+  width:20%;
+  font-size:12px;
+  color:#3498db;
+  border:2px solid #95a5a6;
+  border-radius:50%;
+}
+.amount{
+  width:40%;
+  letter-spacing:2px;
+}
+.status{
+  width:20%;
+  font-size:11px;
+  letter-spacing:2px;
+}
+.seperator{
+  width:50%;
+  margin:0 auto;
+  margin-bottom:4px;
+  border-bottom:2px solid #ecf0f1;
+}
+.wallet{
+  width:95%;
+  height:80px;
+  border:1px solid;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+}
+.imgHold{
+  width:60px;
+  height:inherit;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.imgHold > img{
+  height:40px;
+}
+.content{
+  width:150px;
+  height:inherit;
+  border-left:1px solid;
+}
+.content > h6 {
+  padding:8px;
+  letter-spacing:2px;
+  color:#3498db;
+}
+.content > h4{
+  padding:4px 8px;
+}
+.bills{
+  margin-top:8px;
+  height: 150px;
+  width:95%;
+  border:1px solid;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+}
+.bills>.content{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+}
+.content > .invoice{
+  height:40px;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+}
+.content > .invoice > div{
+  font-weight:bolder;
+}
+.content > .seperator{
+  width:80%;
+}

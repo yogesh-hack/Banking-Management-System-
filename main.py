@@ -5,13 +5,16 @@ from models.user import User
 # from services.transaction_service import TransactionServices
 from services.account_service import AccountService
 from services.user_service import UserServices
-import csv
+import eel
+import webview
+import datetime
+
 
 def main():
     # create some accounts
     # acc1 = Account(1, 8328698, 3000)
     # acc2 = Account(2, 645657, 40000)
-    ram = User(1,287348,"Ram",20,"dehli",9015901148)
+    ram = User(1, 287348, "Ram", 20, "dehli", 9015901148)
     #
     # # create a transaction
     # transaction1 = Transaction(67423, "NEFT", 50000, 308277537263)
@@ -76,7 +79,7 @@ def main():
     user_service.users = {}
 
     # create a new user
-    user_id = user_service.create_user(165762,"joe",20,"toronto",5578768717)
+    user_id = user_service.create_user(165762, "joe", 20, "toronto", 5578768717)
     print("User created with ID:", user_id)
 
     user_id = user_service.create_user(7634, "peach", 26, "america", 2375646634)
@@ -90,8 +93,33 @@ def main():
         print(user)
 
 
+# name of folder where the html, css, js, image files are located
+eel.init('templates')
+
+
+@eel.expose
+def get_current_datetime():
+    current_datetime = datetime.datetime.now()
+    return current_datetime.strftime('%Y-%m-%d %H:%M:%S')
+
+
+@eel.expose
+def login(username, password):
+    # Add your authentication logic here
+    if username == 'admin' and password == 'password':
+        print("login successfully")
+        eel.show('index.html')
+    else:
+        print("invalid login", username, password)
+
+
+# 1000 is width of window and 600 is the height
+eel.start('login.html', size=(990, 700), disable_cache=True)
+
 if __name__ == '__main__':
     main()
+    window = webview.create_window('Bank management System', 'index.html')
+    webview.start(window)
     # with open('data/user.csv', newline='') as csvfile:
     #     reader = csv.reader(csvfile)
     #     for row in reader:

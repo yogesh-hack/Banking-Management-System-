@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Union Bank of python | Login</title>
+	<link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+      <h3>Union Bank of Python</h3>
+<div class="container">
+	<div class="main">
+		<input type="checkbox" id="chk" aria-hidden="true">
+			<div class="signup">
+				<form>
+					<label for="chk" aria-hidden="true">Create Account</label>
+					<input type="text" name="txt" placeholder="User name" required="">
+					<input type="email" name="email" placeholder="Email" required="">
+					<input type="password" name="pswd" placeholder="Password" required="">
+					<button type="button">Create Account</button>
+				</form>
+			</div>
+
+			<div class="login">
+				<form onsubmit="login(); return false;">
+					<label for="chk" aria-hidden="true">Login</label>
+					<input type="text"  id="username" placeholder="Username" required="">
+					<input type="password"  id="password" placeholder="Password" required="">
+					<button type="button" onclick="login()">Login</button>
+				</form>
+			</div>
+	</div>
+</div>
+	  <script type="text/javascript" src="/eel.js"></script>
+    <script type="text/javascript">
+        function login() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            eel.login(username, password);
+        }
+    </script>
+</body>
+</html>

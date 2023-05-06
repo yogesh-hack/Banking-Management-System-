@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Union Bank of Python</title>
+        <link href="style.css" rel="stylesheet">
+        <script type="text/javascript" src="/eel.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+<div class="dashboardContainer">
+  <div class="menu">
+    <div class="title">
+      <div class="imgHolder">
+        <img src="https://i.imgrpost.com/imgr/2017/11/17/001-money.png" alt="001-money.png" border="0">
+      </div>
+      <h3>Union Bank of Python</h3>
+    </div>
+    <div class="profile">
+      <div class="profileImg">
+        <img src="https://i.imgrpost.com/imgr/2017/11/17/man.png" alt="man.png" border="0" />
+      </div>
+      <div class="details">
+        Louis Walters <br> <span>ID: 2014112</span>
+      </div>
+    </div>
+    <div class="menuItems">
+      <div class="options">
+        <div class="items selected">
+          <i class="fa fa-bar-chart" aria-hidden="true"></i>
+          <h5>Dashboard</h5>
+        </div>
+        <div class="items">
+          <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+          <h5>Account Settings</h5>
+        </div>
+        <div class="items">
+          <i class="fa fa-google-wallet" aria-hidden="true"></i>
+          <h5>E-Wallet</h5>
+        </div>
+        <div class="items">
+          <i class="fa fa-credit-card" aria-hidden="true"></i>
+          <h5>Bill Payments</h5>
+        </div>
+      </div>
+      <div class="items">
+          <i class="fa fa-sign-out" aria-hidden="true"></i>
+          <h5>Sign out</h5>
+        </div>
+    </div>
+  </div>
+  <div class="info">
+    <div class="header">
+      <h4>Personal Account</h4>
+      <div class="extras">
+        <i class="fa fa-bell" aria-hidden="true"
+           style="font-size:15px;"></i><span style="margin-left:6px;font-weight:bolder;letter-spacing:1px;">Notifications</span>
+        <div class="support"><i class="fa fa-phone" aria-hidden="true" style="font-size:18px;"></i><h5>Support</h5></div>
+      </div>
+    </div>
+    <div class="dateInfo"> pm, India</div>
+    <div class="firstRow">
+      <div class="elemfirst" id="first">
+        <h5>ACCOUNT DETAILS</h5>
+        <p><strong>ACCOUNT HOLDER</strong><br><span id="accountName"></span></p>
+        <p><strong>ACCOUNT NO</strong><br><span id="accountNumber"></span></p>
+        <p><strong>ACCOUNT TYPE</strong><br><span id="accountType "></span></p>
+        <p></p>
+      </div>
+      <div class="elemfirst">
+        <h5>BALANCE ( in Indian Rupees (₹) )</h5>
+        <div id="balance">₹ 10,56,963.60</div>
+      </div>
+    </div>
+    <div class="secondRow">
+      <div class="elemSecond">
+        <h5>MANAGE CARDS</h5>
+        <div class="cardImg">
+          <img src="https://i.imgrpost.com/imgr/2017/11/17/002-shopping-store.png" alt="002-shopping-store.png" border="0" />
+        </div>
+        <h4 class="cardLabels">VISA CARD</h4>
+        <div class="cards">
+          <i class="fa fa-cc-visa" aria-hidden="true"></i>
+          <h5>47XX-XX89-56XX-60XX</h5>
+        </div>
+        <h4 class="cardLabels">MASTERCARD</h4>
+        <div class="cards">
+          <i class="fa fa-cc-mastercard" aria-hidden="true"></i>
+          <h5>74XX-XX10-X65X-32XX</h5>
+        </div>
+        <div class="statement">CHECK STATEMENT</div>
+      </div>
+      <div class="elemSecond">
+        <h5>RECENT ACTIVITY</h5>
+        <div class="transaction">
+          <div class="date">14/11</div>
+          <div class="amount">₹30,000</div>
+          <div class="status" style="color:#e74c3c">Withdraw</div>
+        </div>
+        <div class="seperator"></div>
+        <div class="transaction">
+          <div class="date">31/10</div>
+          <div class="amount">₹90,062</div>
+          <div class="status" style="color:#2ecc71">Deposit</div>
+        </div>
+        <div class="seperator"></div>
+        <div class="transaction">
+          <div class="date">20/10</div>
+          <div class="amount">₹2,000</div>
+          <div class="status" style="color:#2ecc71">Deposit</div>
+        </div>
+        <div class="seperator"></div>
+        <div class="transaction">
+          <div class="date">16/10</div>
+          <div class="amount">₹56,000</div>
+          <div class="status" style="color:#2ecc71">Deposit</div>
+        </div>
+      </div>
+      <div class="elemSecond">
+        <h5>E-WALLET AND BILLS</h5>
+        <div class="wallet">
+          <div class="imgHold">
+            <img src="https://i.imgrpost.com/imgr/2017/11/18/wallet.png" alt="wallet.png" border="0">
+          </div>
+          <div class="content">
+            <h6>YOUR BALANCE</h6>
+            <h4>₹ 2,000.62</h4>
+          </div>
+        </div>
+        <div class="bills">
+          <div class="imgHold">
+            <img src="https://i.imgrpost.com/imgr/2017/11/18/invoice.png" alt="invoice.png" border="0" />
+          </div>
+          <div class="content">
+            <div class="invoice">
+              <i class="fa fa-bolt" aria-hidden="true"></i>
+              <h5 class="entity">Electricity</h5>
+              <div class="status" style="color:#2ecc71"> Paid</div>
+            </div>
+            <div class="seperator"></div>
+            <div class="invoice">
+              <i class="fa fa-tint" aria-hidden="true"></i>
+              <div class="entity">Water</div>
+              <div class="status" style="color:#e74c3c">Unpaid</div>
+            </div>
+            <div class="seperator"></div>
+            <div class="invoice">
+              <i class="fa fa-wifi" aria-hidden="true"></i>
+              <div class="entity">Internet</div>
+              <div class="status" style="color:#2ecc71">Paid</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+        async function getCurrentDateTime() {
+            const datetime = await eel.get_current_datetime()();
+            document.getElementByClassName('dateInfo').textContent = datetime;
+        }
+
+        function displayAccountDetails(name, number, type) {
+          document.getElementById('accountName').innerText = name;
+          document.getElementById('accountNumber').innerText = number;
+          document.getElementById('accountType').innerText = type;
+        }
+
+
+        getCurrentDateTime();
+    </script>
+</body>
+</html>
